@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: blueviolet;
+        }
+        
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        
+        .flex-container2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: blueviolet;
+        }
+        
+        .flex-container2>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+    <title>learn the basics css</title>
+</head>
+
+<body>
+    <h1>Create a flex container</h1>
+    <!--parent element(container)-->
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="flex-container2">
+        <div style="order:3">1</div>
+        <div style="order:5">2</div>
+        <div style="order:2">3</div>
+        <div style="order:1">4</div>
+        <div style="order:4">5</div>
+        <br>
+        <div style="flex-grow: 1;">1</div>
+        <div style="flex-grow: 4;">2</div>
+        <div style="flex-grow: 5;">3</div>
+        <div style="flex-grow: 1;">4</div>
+        <div style="flex-grow: 8;">5</div>
+    </div>
+
+</body>
+
+</html>
