@@ -27,6 +27,11 @@ body {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .navbar {
     width: 100%;
     height: auto;
@@ -335,12 +340,6 @@ body {
 
 /*responsive*/
 
-@media (max-width:600px) {}
-
-@media(min-width:600px) {}
-
-@media (min-width:768px) {}
-
 @media(max-width:900px) {
     body {
         border-color: aqua;
@@ -374,18 +373,18 @@ body {
     .bar {
         display: none;
     }
+    .reversed :first-child {
+        order: 2;
+    }
 }
 
-@media(min-width:992px) {
+@media(min-width:900px) {
     .grid-col-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: space-between;
     }
-}
-
-@media (min-width:1200px) {
     .text-xl {
         font-size: 40px;
     }
